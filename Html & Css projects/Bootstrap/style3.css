@@ -1,0 +1,270 @@
+hr{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+ul button{
+    border:rgba(0, 0, 0, 0.185) 1px solid !important;
+    border-radius: 2px;
+   padding:0  12px !important;
+   padding-bottom: 4px !important;
+   color:rgba(0, 0, 0, 0.705)!important ;
+   background-color: white;
+   margin: 0 3px;
+}
+button:hover{
+    color: blue !important;
+}
+#btnh:hover{
+    color: white !important;
+}
+a{
+    color: black !important;
+}
+a:hover{
+    color: blue !important;
+}
+#a:hover{
+    color: black !important;
+}
+#carda{
+    color: #2F5978 !important;
+    text-decoration: none;
+}
+
+#cardzoom{
+    
+    transition: all 0.5s;
+}
+#cardzoom:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+@media(max-width:768px){
+    #navbrand{
+        display: none;
+    }
+    #expandnav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #collapsep{
+        display: none !important;
+    }
+    #expandnav >*{
+        width: 20%;
+    }
+    #expandnav button {
+        width: 85%;
+        height: 60%;
+    }
+    .middlecard{
+        margin: 15px 0;
+        
+    }
+    .smlong{
+        z-index: -5;
+       
+    }
+}
+
+.linkblue{
+    color: #2487ce !important;
+}
+.linkblue:hover {
+    color: #2487ceb2 !important;
+}
+
+@media (min-width:992px){
+    
+    h2{
+        
+        font-size: 3rem;
+    }
+    
+}
+#dropdown1:hover #dropdown-menu1{
+    display: block;
+   
+}
+
+.card{
+   
+    border: 0px solid !important;
+}
+.dropdown-item:hover{
+background-color: white;
+}
+
+.card:hover #carda{
+    color: #099ddd !important ;    
+}
+#nav2 a{
+    color: #16507b !important;
+}
+#nav2 a:hover{
+    color:  #2487ce !important;
+}
+.ads{
+    max-width: 45%;
+    filter: grayscale(90%);
+}
+.ads:hover{
+    transition: all 0.5s ;
+    transition-duration: 0.3s;
+    filter: grayscale(0%);
+    width: 200%;
+  transform: scale(1.3);
+  
+}
+.pp{
+    margin-bottom: 0px !important;
+}
+.sliderp::after{
+    content: "";
+    display: block;
+    background-color:#f3f9fd;
+    border-top: 20px solid transparent;
+    border-left: 20px solid white ;
+    width: 40px;
+    border-right: 20px solid white;
+    margin:0 auto ;    
+}
+.agroup >*{
+margin:0 10px ;
+text-decoration: none;
+}
+.active{
+    color: blue !important;
+}
+.tcard{
+    border-radius: 10px !important;
+}
+.tcardbody{
+    padding: 0px !important;
+}
+.tcardfooter{
+    background-color: white !important;
+}
+.icon{
+    background-color: #7dcaeb85;
+    width: 50px;
+    height: 50px;
+}
+input,textarea {
+    width:100%;
+    padding: 10px;
+    border:  rgba(0, 0, 0, 0.26) 1px solid;
+}
+input:active{
+    border:blue 1px solid !important;
+}
+
+.rr{
+    height: 500px;
+}
+.carousel-indicators >*{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: white !important;
+    border: #099ddd 2px solid !important;
+    border-radius: 50%;
+}
+.carousel-indicators >*:focus{
+    background-color: #099ddd !important;
+}
+a{
+    text-decoration: none ;
+}
+.upbtn{
+    z-index: 1;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+}
+.linkback{
+    background-color: #e3f0fa;
+}
+textarea,input:focus{
+    outline: none !important;
+border:1px solid #099ddd !important;
+}
+.chevrons{
+    
+    font-weight : 200px !important;
+    font-size: 0.8rem;
+}
+.hblue{
+    color: #2487ce !important;
+}
+.btn-outline-light:hover{
+    color: #2487ce !important;
+}
+.btn-primary{
+    background-color: #2487ce !important;
+}
+.btn-outline-primary{
+    border: 1px solid #2487ce !important;
+    color: #2487ce;
+}
+.btn-outline-primary:hover{
+    background-color: #2487ce !important;
+}
+.hwhite1{
+    display: none;
+    position: absolute;
+    bottom: 90px;
+   height: 40px;
+   background-color: rgba(255, 255, 255, 0.836);
+}
+.team-1{
+    position: relative !important ;
+    z-index: 5;
+}
+.tcardbody:hover .hwhite1{
+    display: block !important;
+}
+.tcard a{
+    color: rgba(41, 119, 175, 0.973) !important;
+    }
+    .tcard a:hover{
+        color: #2487cec4 !important;
+        }
+
+.carousel .active{
+    color: black !important;
+}
+.nav1links >*:hover{
+   
+    outline: none !important;
+    border-bottom: #099ddd 2px solid !important;
+}
+.svgs{
+    margin: 0 auto;
+    width: 25%;
+    background-image:url(svg3.svg) ;
+    background-repeat: no-repeat;
+} 
+.accordion-header >*{
+    color: black !important;
+}
+.accordion-header >*:hover{
+    color: #2487ce !important;
+}
+.accordion-button {
+    color: black !important;
+}
+.accordion-header:focus{
+    outline: none !important;
+    border: 0px solid black !important;
+}
+#app:focus{
+    color: #2487ce !important;
+}
+#app:focus .appp{
+    display: none !important;
+}
+.shadoww{
+    box-shadow:45px 0px black;
+}

@@ -1,0 +1,164 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px (card titles e.g. Work, Play)
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 300, 400, 500
+*/:root{
+    --Blue: hsl(246, 80%, 60%);/* */
+    --Light-red: hsl(15, 100%, 70%);/*work */
+   --Light-red : hsl(348, 100%, 68%);/* (study)*/
+   --Soft-blue : hsl(195, 74%, 62%);/*(play) */
+   --Lime-green : hsl(145, 58%, 55%);/*(exercise) */
+   --Violet : hsl(264, 64%, 52%);/* (social):*/
+   --Soft-orange: hsl(43, 84%, 65%);/* (self care)*/
+   
+   --Very-dark-blue: hsl(226, 43%, 10%);/* */
+   --Dark-blue: hsl(235, 46%, 20%);/* */
+   --Desaturated-blue: hsl(235, 45%, 61%);/* */
+   --Pale-Blue: hsl(236, 100%, 87%);/* */
+   
+   }
+   *{
+       box-sizing: border-box;
+   }
+   body{
+       background: black;
+       margin: 100px 120px;
+       font-family: 'Rubik', sans-serif;
+       font-size: 18px;
+       }
+       h1,h2,h3,h4,h5,h6,a{
+           color: white;
+       }
+       a{
+           text-decoration: none;
+       }
+       p{
+           color:var(--Pale-Blue) ;
+       }
+   
+   .generalGrid{
+       display: grid;
+       grid-template-rows:repeat(2, 1fr) ;
+       grid-template-columns:repeat(4, 1fr); ;
+       gap: 20px;
+       height: 75vh;
+   }
+   
+   .container{
+       background-color: var(--Dark-blue);
+       padding:25px ;
+       border:1px solid black ;
+       border-radius:10px ;
+       position: relative;
+   }
+   .item1{
+       grid-row: span 2;
+      
+    }
+   .jeremy{
+       border:3px solid white ;
+       border-radius: 50%;
+   }
+   .paleblue{
+   color: var(--Pale-Blue);
+   }
+    .other-card{
+        position: absolute;
+        padding: 25px 25px 135px 25px;
+        top: 0px;
+        left: 0px;
+        border-radius:10px ;
+        width: 100%;
+        background-color: var(--Blue);
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 30px;
+    }
+    .other-card2{
+        position: relative;
+        background:url(images/icon-work.svg);
+        background-color: hsl(15, 100%, 70%);
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    .item-small{
+        padding-top: 5px;
+        position: absolute;
+        width: 100%;
+        bottom:0px;
+        left: 0px;
+        height: 80%;
+        
+
+    }
+    .item-small >*{
+        margin-top: 22px;
+        margin-bottom: 15px;
+    }
+    .card3{
+        background-image: url(images/icon-play.svg);
+        background-color:var(--Soft-blue) ;
+    }
+    .card4{
+        background-image: url(images/icon-study.svg);
+        background-color:var(--Light-red);
+    }
+    .card5{
+        background-image: url(images/icon-exercise.svg);
+        background-color:var(--Lime-green);
+    }
+    .card6{
+        background-image: url(images/icon-social.svg);
+        background-color:var(--Violet)
+    }
+    .card7{
+        background-image: url(images/icon-self-care.svg);
+        background-color:var(--Soft-orange)
+    }
+    .menu3dots{
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 26px;
+        cursor: pointer;
+    }

@@ -1,0 +1,107 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Flex Panels</title>
+      <!-- FOnt -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <!--  -->
+      <link rel="stylesheet" href="BOOTSTRAPsrc - Copy/bootstrap.min.css">
+      <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+         .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+         .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+         .panel3 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+         .panel4 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); } 
+         
+         .flexBox{
+          font-family: 'Josefin Sans', sans-serif ;
+          display: flex;
+          width: 100vw !important;
+          height: 100vh;
+          color: white;
+         }
+         .flexBox > * {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          background-repeat: no-repeat;
+          background-size:cover ;
+          transition: all 1s;
+         }
+         .panel{
+          width: 25vw;
+         }
+         p:not(.visible){
+          display: none;
+         }
+         /* related to js */
+         .growSize{
+          width: 55vw;
+         }
+        
+          /* related to js */         
+      </style>
+    
+    </head>
+
+    <body>
+      
+        <div class="flexBox">
+          <div class="panel panel1 fs-1 fw-light">
+            <p>HEY</p>
+            <p class="visible">LET'S</p>
+            <p>DANCE</p>
+          </div>
+          <div class="panel panel2 fs-1  fw-light">
+            <p>EXPERIENCE</p>
+            <p  class="visible">IT</p>
+            <p>TODAY</p>
+          </div>
+          <div class="panel panel3 fs-1  fw-light">
+            <p>GIVE</p>
+            <p class="visible">ALL</p>
+            <p>YOU CAN</p>
+          </div>
+          <div class="panel panel4 fs-1  fw-light">
+            <p>LIFE</p>
+            <p class="visible">IN</p>
+            <p>MOTION</p>
+          </div>
+        </div>
+    
+
+      <script>
+        const panels = document.querySelectorAll(`.flexBox > *`)
+        panels.forEach( panel => {
+          panel.addEventListener(`click` , stylingFunc)
+        })
+        function stylingFunc () {
+
+          panels.forEach( panel => {
+            const classArray = [...panel.classList]
+            if(classArray.includes(`growSize`)){
+              panel.classList.remove(`growSize`)
+            }
+           if(this === panel){
+            this.classList.add(`growSize`)
+          
+           }
+          })
+          
+          
+        
+        }
+      </script>
+    </body>
+    </html>

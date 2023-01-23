@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 JS Project</title>
+  <link rel="stylesheet" href="BOOTSTRAPsrc/bootstrap.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #172D40;
+    }
+    h1,label,p{
+      color: white;
+    }
+    /* Default values or Js components */
+    :root{
+      --spacing: 10px ;  
+      --blur: 10px;
+      --base: #ffc600;
+    }
+
+    #imgWrapper{
+      background-color: var(--base);
+    }
+    #imgWrapper{
+      padding: var(--spacing);
+    }
+    #imgWrapper{
+      filter: blur(var(--blur));
+    }
+    .spanJS{
+      color: var(--base);
+    }
+    /*  */
+    img{
+      width: 100%;
+      height: 450px;
+    }
+    #rangeInput3{
+      margin-top: 21px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+        <h1 class="text-center">Update CSS Variables with <span  class="spanJS">JS</span></h1>
+          <form >
+            <div class="col-12 col-lg-4 d-lg-flex justify-content-evenly"><label  for="rangeInput1" class="fs-1">Spacing</label> <input id="rangeInput1" type="range" min="0" max="100" value="10" name="spacing" ></div>
+            <div class="col-12 col-lg-4 d-lg-flex justify-content-evenly"><label  for="rangeInput2" class="fs-1">Blur</label> <input id="rangeInput2" type="range" min="0" max="100" value="10" name="blur"></div>
+            <div class="col-12 col-lg-4 d-lg-flex justify-content-evenly"><label  for="rangeInput3" class="fs-1">Base Color</label> <input id="rangeInput3" type="color" value="#ffc600" name="base" ></div>
+          </form>
+      </div>
+
+    <div class="row mt-4">
+        <div class="col-12 " id="imgWrapper">
+          <img src="photo.jpg"  alt="Sekil">
+        </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

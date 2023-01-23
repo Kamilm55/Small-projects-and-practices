@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #034DAF;
+}
+
+.allDiv{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.clockDiv {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px; ;
+    background-image: url(clock.png);
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+p{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3rem ;
+    font-weight: 700;
+}
+.blackCrab {
+    margin: 65px;
+    width: 37%;
+    height: 5px;
+    background-color: black;
+    transform-origin: 100%;
+    position: absolute;
+    top: 36%;
+    transform: rotate(90deg);
+}
+.hour {
+    margin-left: 130px;
+    width: 25%;
+}
+.minute {
+    height: 4px;
+    background-color: #2264bacb;
+}
+.second {
+    height: 3px;
+    background-color: red;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style2.css">
+<style>
+    
+.fakeimg{
+background: grey;
+width: 100%;
+height:200px
+}
+</style>
+
+</head>
+<body>
+    
+<!--header-->
+<header>
+<div class="container-fluid bg-primary text-light text-center p-5">
+    <h1>My First Bootstrap 5 Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
+</div>
+</header>
+<!--nav-->
+<nav>
+<div class="navbar navbar-expand bg-dark">
+<ul class="navbar-nav mx-3 ">
+    <li class="nav-item"><a href="#" class="nav-link active">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+</ul>
+</nav>
+<!--section-->
+<section>
+    <div class="container py-5">
+    <div class="row  ">
+        <div class="col-4">
+            <h3>About me</h3>
+            <h4>Photo of me:</h4>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="col-8">
+            <h3>TITLE HEADING</h3>
+            <h4>Title description, Dec 7, 2020</h4>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p><br>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="col-4">
+            <h3>Some Links</h3><br>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div  class="navbar  ">
+                <ul class="navbar-nav d-flex flex-column">
+                    <li class="nav-item bg-primary px-1 rounded"><a id="a" href="#" class="nav-link active">Active</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+                </ul>
+        </div>
+       
+    </div>
+    <div class="col-8">
+        <h3>TITLE HEADING</h3>
+        <h4>Title description, Dec 7, 2020</h4>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p><br>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+</div>
+</section>
+
+<footer>
+    <div class="container-fluid p-5 text-light bg-dark lead text-center">Footer</div>
+</footer>
+<!--dafsdazsd/;;dsfk;sfklsgs'l-->
+<div class="container">
+    <form method="post" name="name" action="ksadl.php" onsubmit="return islem()" class="row g-3 my-5 ">
+    <div class="col-4">
+<input   type="text" class="form-control " placeholder="Username" ></div>
+<input type="submit" class="btn btn-danger col-2"></input>
+</form>
+</div>
+
+<script>
+    function islem(){
+ var form=document.forms["name"];
+ var yazilan=form["isim"].value;
+
+ if(yazilan == ""){
+     alert("lorem10 ");
+     return false;
+ }
+ 
+ 
+     return true;
+    
+    }
+
+</script>
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+</body>
+</html>

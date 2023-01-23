@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.name{
+    letter-spacing: 0.1rem;
+}
+.circleImg{
+    height: 200px;
+    border-radius:50%;
+    
+}
+.bg-secondary{
+    background-color: rgb(199, 196, 196) !important; 
+}
+
+.row{
+    display: flex;
+}
